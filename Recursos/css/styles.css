@@ -1,0 +1,181 @@
+
+@page {
+    size: A4;
+    margin: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    color: #333;
+    line-height: 1.6;
+}
+        
+.container {
+    max-width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 40px 50px;
+    background: white;
+}
+        
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+        
+.header-left {
+    flex: 1;
+}
+        
+.header-left h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+        
+.header-left h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 15px;
+}
+        
+.contact-info {
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 1PX;
+}
+        
+.linkedin {
+    font-size: 11px;
+    color: #0066cc;
+    text-decoration: none;
+}
+        
+.photo {
+    width: 120px;
+    height: 140px;
+    background: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+        
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+        
+.section {
+    margin-bottom: 25px;
+}
+        
+.section-title {
+    background: #e8f0f7;
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.section-title_about_me {
+    background: #e8f0f7;
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    margin-top: -30px;
+    text-align: center;
+    color: #1a1a1a;
+}    
+.section-content {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+}
+
+.job {
+    margin-bottom: 18px;
+}
+
+.job-header {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.job-title {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.job-details {
+    color: #666;
+}
+
+.job ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.job li {
+    font-size: 11.5px;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.education-item, .course-item {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skills-grid, .languages-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 11.5px;
+}
+
+.skill-item, .language-item {
+    flex: 0 0 auto;
+}
+
+.skill-item::before, .language-item::before {
+    content: "o ";
+    margin-right: 5px;
+}
+
+.references {
+    font-size: 12px;
+}
+.reference-item {
+    margin-bottom: 5px;
+}
+        
+@media print {
+    body {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+            
+    .container {
+        margin: 0;
+        padding: 40px 50px;
+    }
+}
