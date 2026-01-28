@@ -1,122 +1,395 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Wilson Andres Vasquez Jaspi - Técnico en Soporte TI, Operaciones y Sistemas, Automatización. Portafolio profesional.">
+    <meta name="keywords" content="Soporte TI, WMS, Python, SQL, Automatización, Desarrollo Software">
+    <meta property="og:title" content="Wilson Vasquez - Soporte TI & Automatización">
+    <meta property="og:description"
+        content="Técnico en formación en Desarrollo de Software con experiencia en soporte TI y sistemas WMS">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Recursos/css/styles.css">
-    <title>CV - Wilson Andres Vasquez Jaspi</title>
+
+    <title>Wilson Vasquez | Soporte TI & Automatización</title>
 </head>
+
 <body>
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <div class="header-left">
-                <h1>WILSON ANDRES VASQUEZ JASPI</h1>
-                <h2>Soporte TI | Operaciones y Sistemas | Automatización basica</h2>
-                <div class="contact-info">
-                    3248435270 | wilsonvasquez491@gmail.com | Yumbo, Valle del Cauca | C.C 1105363140
-                </div>
-                <div>
-                    <span style="font-size: 14px; color: #666;">🔗</span>
-                    <a href="https://www.linkedin.com/in/wilson-vasquez-jaspi-4a124e3ab" class="linkedin">
-                        https://www.linkedin.com/in/wilson-vasquez-jaspi-4a124e3ab
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-gradient">WV</span>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="#hero" class="nav__link">Inicio</a></li>
+                <li><a href="#about" class="nav__link">Sobre Mí</a></li>
+                <li><a href="#experience" class="nav__link">Experiencia</a></li>
+                <li><a href="#education" class="nav__link">Educación</a></li>
+                <li><a href="#skills" class="nav__link">Habilidades</a></li>
+                <li><a href="#contact" class="nav__link">Contacto</a></li>
+            </ul>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero__bg">
+                <div class="hero__gradient"></div>
+            </div>
+            <div class="hero__content container">
+                <p class="hero__greeting animate-fade-in">Hola, soy</p>
+                <h1 class="hero__name">
+                    <span class="typing-text" id="typed-name">Wilson Vasquez</span>
+                    <span class="cursor">|</span>
+                </h1>
+                <h2 class="hero__title">
+                    <span class="gradient-text">Soporte TI</span> | Operaciones y Sistemas | <span
+                        class="gradient-text">Automatización</span>
+                </h2>
+                <p class="hero__description animate-fade-in-delay">
+                    Técnico en formación en Desarrollo de Software con experiencia en soporte a usuarios operativos,
+                    manejo de sistemas WMS y automatización de procesos.
+                </p>
+                <div class="hero__cta">
+                    <a href="https://www.linkedin.com/in/wilson-vasquez-jaspi-4a124e3ab" target="_blank"
+                        class="btn btn--primary">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Wilson-mek" target="_blank" class="btn btn--secondary">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                        </svg>
+                        GitHub
                     </a>
                 </div>
-                <div>
-                    <span style="font-size: 14px; color: #666;">🔗</span>
-                    <a href="https://github.com/Wilson-mek" class="linkedin">
-                        https://github.com/Wilson-mek
+                <div class="hero__scroll">
+                    <a href="#about" class="scroll-indicator">
+                        <span>Scroll</span>
+                        <div class="scroll-arrow"></div>
                     </a>
                 </div>
             </div>
-            <div class="photo">
-                <img src="Recursos/img/perfilFoto.jpg" alt="Foto">
-            </div>
-        </div>
+        </section>
 
-        <!-- Sobre Mí -->
-        <div class="section">
-            <div class="section-title_about_me">PERFIL PROFESIONAL</div>
-            <div class="section-content">
-                Técnico en formación en Desarrollo de Software con experiencia en soporte a usuarios operativos, manejo de sistemas WMS, resolución de incidencias en entornos logísticos, control de información y apoyo a procesos operativos mediante herramientas tecnológicas. 
-                Interés en roles de Soporte TI y soporte de aplicaciones con proyección hacia automatización y análisis de datos. 
-            </div>
-        </div>
-
-        <!-- Experiencia Laboral -->
-        <div class="section">
-            <div class="section-title">EXPERIENCIA LABORAL</div>
-            
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Auxiliar Operativo</span>
-                    <span class="job-details"> | Apix logística especializada sas | Yumbo | sep. 2025 - Actualidad</span>
-                </div>
-                <ul>
-                    <li>Analizar posibles mejoras en la estructura tecnológica</li>
-                    <li>Apoyo en la verificación física del inventario.</li>
-                    <li>Atención y resolución de incidencias en el flujo operativo</li>
-                    <li>Trabajo coordinado con área administrativa y operativa para garantizar continuidad de proceso</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Analista Inventarios</span>
-                    <span class="job-details"> | BSS operaciones logísticas | Yumbo | abr. 2023 - abr. 2025</span>
-                </div>
-                <ul>
-                    <li>Apoyo directo en control y seguimiento de inventario.</li>
-                    <li>Registro y actualización de información en sistemas internos.</li>
-                    <li>Coordinación de tareas operativas y soporte al área administrativa.</li>
-                    <li>Colaboración en reportes y control de indicadores básicos de gestión.</li>
-                    <li>Gestor de entrada y salida de mercancía.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Educación -->
-        <div class="section">
-            <div class="section-title">EDUCACIÓN</div>
-            <div class="education-item">
-                <strong>Tecnología en Desarrollo de Software, Universidad del Valle - Sede Yumbo, Yumbo</strong> | Cursando | 2028
-            </div>
-            <div class="education-item">
-                <strong>Como resolver problemas y tomar decisiones con eficacia, Coursera</strong> | Finalizado | 2025
-            </div>
-            <div class="education-item">
-                <strong>Aspectos básicos: Datos, datos en todas partes, Coursera by Google</strong> | Finalizado | 2025
-            </div>
-            <div class="education-item">
-                <strong>Fundamentos de excel y copilot, Coursera by Microsoft</strong> | Cursando | 2026
-            </div>
-        </div>
-
-        <!-- Habilidades -->
-        <div class="section">
-            <div class="section-title">HABILIDADES</div>
-            <div class="skills-grid">
-                <div class="skill-item">Análisis y visualización de datos (Sheets, Excel)</div>
-                <div class="skill-item">Python básico (automatización simple)</div>
-                <div class="skill-item">Manejo de sistemas WMS</div>
-                <div class="skill-item">SQL básico</div>
-		        <div class="skill-item">Inglés (Intermedio)</div>
-            </div>
-        </div>
-
-
-        <!-- Referencias -->
-        <div class="section">
-            <div class="section-title">REFERENCIAS</div>
-            <div class="references">
-                <div class="reference-item">
-                    <strong>Hellen Valeria Blandón</strong> | Apix Logística especializada | 3135702283
-                </div>
-                <div class="reference-item">
-                    <strong>Cristian Muñoz Arenas</strong> | BSS operaciones logísticas S.A.S | 3136423438
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <h2 class="section__title">
+                    <span class="section__number">01.</span>
+                    Sobre Mí
+                </h2>
+                <div class="about__content">
+                    <div class="about__card glass-card">
+                        <div class="about__photo">
+                            <img src="Recursos/img/perfilFoto.jpg" alt="Wilson Vasquez" class="about__img">
+                            <div class="about__photo-border"></div>
+                        </div>
+                        <div class="about__text">
+                            <p>
+                                Técnico en formación en <strong>Desarrollo de Software</strong> con experiencia en
+                                soporte a usuarios operativos, manejo de sistemas <strong>WMS</strong>, resolución de
+                                incidencias en entornos logísticos, control de información y apoyo a procesos
+                                operativos mediante herramientas tecnológicas.
+                            </p>
+                            <p>
+                                Interés en roles de <strong>Soporte TI</strong> y soporte de aplicaciones con proyección
+                                hacia <strong>automatización</strong> y <strong>análisis de datos</strong>.
+                            </p>
+                            <div class="about__info">
+                                <div class="about__info-item">
+                                    <span class="about__info-icon">📍</span>
+                                    <span>Yumbo, Valle del Cauca</span>
+                                </div>
+                                <div class="about__info-item">
+                                    <span class="about__info-icon">📧</span>
+                                    <span>wilsonvasquez491@gmail.com</span>
+                                </div>
+                                <div class="about__info-item">
+                                    <span class="about__info-icon">📱</span>
+                                    <span>3248435270</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience" id="experience">
+            <div class="container">
+                <h2 class="section__title">
+                    <span class="section__number">02.</span>
+                    Experiencia Laboral
+                </h2>
+                <div class="timeline">
+                    <div class="timeline__item" data-animate>
+                        <div class="timeline__marker">
+                            <div class="timeline__dot"></div>
+                        </div>
+                        <div class="timeline__content glass-card">
+                            <div class="timeline__header">
+                                <h3 class="timeline__title">Auxiliar Operativo</h3>
+                                <span class="timeline__badge">Actual</span>
+                            </div>
+                            <p class="timeline__company">
+                                <svg class="timeline__icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z" />
+                                </svg>
+                                Apix Logística Especializada SAS
+                            </p>
+                            <p class="timeline__date">Sep. 2025 - Actualidad | Yumbo</p>
+                            <ul class="timeline__list">
+                                <li>Analizar posibles mejoras en la estructura tecnológica</li>
+                                <li>Apoyo en la verificación física del inventario</li>
+                                <li>Atención y resolución de incidencias en el flujo operativo</li>
+                                <li>Trabajo coordinado con área administrativa y operativa</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item" data-animate>
+                        <div class="timeline__marker">
+                            <div class="timeline__dot"></div>
+                        </div>
+                        <div class="timeline__content glass-card">
+                            <div class="timeline__header">
+                                <h3 class="timeline__title">Analista de Inventarios</h3>
+                            </div>
+                            <p class="timeline__company">
+                                <svg class="timeline__icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z" />
+                                </svg>
+                                BSS Operaciones Logísticas
+                            </p>
+                            <p class="timeline__date">Abr. 2023 - Abr. 2025 | Yumbo</p>
+                            <ul class="timeline__list">
+                                <li>Apoyo directo en control y seguimiento de inventario</li>
+                                <li>Registro y actualización de información en sistemas internos</li>
+                                <li>Coordinación de tareas operativas y soporte al área administrativa</li>
+                                <li>Colaboración en reportes y control de indicadores de gestión</li>
+                                <li>Gestor de entrada y salida de mercancía</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section education" id="education">
+            <div class="container">
+                <h2 class="section__title">
+                    <span class="section__number">03.</span>
+                    Educación
+                </h2>
+                <div class="education__grid">
+                    <div class="education__card glass-card" data-animate>
+                        <div class="education__icon">🎓</div>
+                        <h3 class="education__title">Tecnología en Desarrollo de Software</h3>
+                        <p class="education__institution">Universidad del Valle - Sede Yumbo</p>
+                        <span class="education__status education__status--progress">En Curso - 2028</span>
+                    </div>
+
+                    <div class="education__card glass-card" data-animate>
+                        <div class="education__icon">📜</div>
+                        <h3 class="education__title">Resolución de Problemas y Toma de Decisiones</h3>
+                        <p class="education__institution">Coursera</p>
+                        <span class="education__status education__status--completed">Finalizado - 2025</span>
+                    </div>
+
+                    <div class="education__card glass-card" data-animate>
+                        <div class="education__icon">📊</div>
+                        <h3 class="education__title">Aspectos básicos: Datos, datos en todas partes</h3>
+                        <p class="education__institution">Coursera by Google</p>
+                        <span class="education__status education__status--completed">Finalizado - 2025</span>
+                    </div>
+
+                    <div class="education__card glass-card" data-animate>
+                        <div class="education__icon">📈</div>
+                        <h3 class="education__title">Fundamentos de Excel y Copilot</h3>
+                        <p class="education__institution">Coursera by Microsoft</p>
+                        <span class="education__status education__status--progress">En Curso - 2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <h2 class="section__title">
+                    <span class="section__number">04.</span>
+                    Habilidades
+                </h2>
+                <div class="skills__content">
+                    <div class="skills__category glass-card" data-animate>
+                        <h3 class="skills__category-title">
+                            <span class="skills__category-icon">💻</span>
+                            Técnicas
+                        </h3>
+                        <div class="skills__list">
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">Análisis y Visualización de Datos</span>
+                                    <span class="skill__percent">80%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">Sistemas WMS</span>
+                                    <span class="skill__percent">85%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">Python (Automatización)</span>
+                                    <span class="skill__percent">60%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-progress="60"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">SQL</span>
+                                    <span class="skill__percent">55%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-progress="55"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">Excel & Sheets</span>
+                                    <span class="skill__percent">85%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__category glass-card" data-animate>
+                        <h3 class="skills__category-title">
+                            <span class="skills__category-icon">🌐</span>
+                            Idiomas
+                        </h3>
+                        <div class="skills__list">
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">Español</span>
+                                    <span class="skill__percent">Nativo</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-progress="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">Inglés</span>
+                                    <span class="skill__percent">Intermedio</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-progress="50"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <h2 class="section__title">
+                    <span class="section__number">05.</span>
+                    Contacto
+                </h2>
+                <div class="contact__content">
+                    <p class="contact__text">
+                        ¿Tienes un proyecto en mente o una oportunidad laboral?
+                        ¡Me encantaría escucharte!
+                    </p>
+                    <div class="contact__methods">
+                        <a href="mailto:wilsonvasquez491@gmail.com" class="contact__card glass-card">
+                            <div class="contact__card-icon">📧</div>
+                            <h3>Email</h3>
+                            <p>wilsonvasquez491@gmail.com</p>
+                        </a>
+                        <a href="tel:+573248435270" class="contact__card glass-card">
+                            <div class="contact__card-icon">📱</div>
+                            <h3>Teléfono</h3>
+                            <p>324 843 5270</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/wilson-vasquez-jaspi-4a124e3ab" target="_blank"
+                            class="contact__card glass-card">
+                            <div class="contact__card-icon">💼</div>
+                            <h3>LinkedIn</h3>
+                            <p>Wilson Vasquez Jaspi</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copyright">
+                    © 2025 Wilson Vasquez. Hecho con 💜
+                </p>
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/wilson-vasquez-jaspi-4a124e3ab" target="_blank"
+                        class="footer__social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Wilson-mek" target="_blank" class="footer__social-link"
+                        aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
+
+    <script src="Recursos/js/animations.js"></script>
 </body>
+
 </html>
