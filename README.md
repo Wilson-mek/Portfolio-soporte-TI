@@ -15,19 +15,17 @@
 
 ## Descripción
 
-Portafolio profesional desarrollado para presentar mi perfil como **Técnico en Soporte TI**, especializado en operaciones y sistemas **WMS**, con enfoque en automatización de procesos y análisis de datos.
-
-Este proyecto sirve como carta de presentación digital, mostrando mi experiencia laboral, formación académica, habilidades técnicas e información de contacto de manera moderna e interactiva.
+Portafolio profesional desarrollado para presentar mi perfil como **Desarrollador Backend**, especializado en operaciones y sistemas **WMS**, con enfoque en automatización de procesos y ciencia de datos.
 
 ---
 
-## Características
+## Qué muestra el sitio
 
-- 🎨 **Diseño Moderno** - Interfaz con glassmorphism, gradientes y animaciones fluidas
-- 📱 **Responsive** - Adaptable a dispositivos móviles, tablets y escritorio
-- ⚡ **Rendimiento** - Optimizado para carga rápida
-- 🎭 **Animaciones** - Efectos de scroll, typing y transiciones suaves
-- 🌙 **UI Premium** - Estética profesional con efectos visuales de alto nivel
+- **Demo interactivo:** simulación con datos de ejemplo de una automatización con n8n, Python, Playwright y Telegram. Tres casos: llega un pedido, llega un despacho y reporte diario.
+- **Proyectos:** uno público en desarrollo y tres trabajos hechos para empresas (código privado).
+- **Perfil:** stack técnico y experiencia.
+- **Estudios:** formación en curso y cursos completados.
+- **Contacto:** correo, GitHub y LinkedIn.
 
 ---
 
@@ -46,47 +44,21 @@ Este proyecto sirve como carta de presentación digital, mostrando mi experienci
 
 ```
 Portfolio-soporte-TI/
-├── 📄 index.html          # Página principal
-├── 📄 README.md           # Documentación
+├──  index.html             # Página principal
+├──  README.md              # Documentación
+├── CV-Wilson-Vasquez.pdf   # CV descargable
 └── 📁 Recursos/
     ├── 📁 css/
     │   └── styles.css     # Estilos principales
-    ├── 📁 js/
-    │   └── animations.js  # Scripts de animación
-    └── 📁 img/
-        └── perfilFoto.jpg # Foto de perfil
+    └── 📁 js/
+        └── animations.js  # Scripts de animación
 ```
-
----
-
-## Uso
-
-1. **Abre en tu navegador**
-   - Navega a la carpeta `Portfolio-soporte-TI`
-   - Abre el archivo `index.html` directamente
-   - O usa un servidor local como Live Server en VS Code
-
----
-
-## Secciones del Portafolio
-
-| Sección | Descripción |
-|---------|-------------|
-| **Hero** | Presentación principal con nombre y especialidades |
-| **Sobre Mí** | Información personal y profesional |
-| **Experiencia** | Timeline con historial laboral |
-| **Educación** | Formación académica y certificaciones |
-| **Habilidades** | Barras de progreso con competencias técnicas |
-| **Contacto** | Métodos de comunicación disponibles |
 
 ---
 
 ## Autor
 
 **Wilson Andres Vasquez Jaspi**
-
-- wilsonvasquez491@gmail.com
-- [LinkedIn](https://www.linkedin.com/in/wilson-vasquez-jaspi-4a124e3ab)
 
 <div align="center">
     Hecho con 💜 por Wilson Vasquez
